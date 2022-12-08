@@ -1,5 +1,5 @@
 //ссылки на элементы DOM с которыми бужем работать
-const decrementButton = document.querySelector('button[data-action="decrement"]');
+const decrementButton = document.querySelector('[data-action="decrement"]');
 const incrementButton = document.querySelector('[data-action="increment"]');
 const result = document.querySelector("#value");
 
