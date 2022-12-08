@@ -1,18 +1,18 @@
 //ссылки на элементы DOM с которыми бужем работать
-const decrementButton = document.querySelector('[data-action="decrement"]');
-const incrementButton = document.querySelector('[data-action="increment"]');
-const result = document.querySelector("#value");
+const decrementButtonEl = document.querySelector('[data-action="decrement"]');
+const incrementButtonEl = document.querySelector('[data-action="increment"]');
+const resultEl = document.querySelector("#value");
 
 let counterValue = 0; //переменная для счетчика
 
 //слушатель клика "-1"
-decrementButton.addEventListener("click", () => {
+decrementButtonEl.addEventListener("click", () => {
   counterValue -= 1;
-  result.textContent = counterValue;
+  resultEl.textContent = counterValue;
 });
 
 //слушатель клика "+1"
-incrementButton.addEventListener("click", () => {
+incrementButtonEl.addEventListener("click", () => {
   counterValue += 1;
-  result.textContent = counterValue;
+  resultEl.textContent = counterValue;
 });
