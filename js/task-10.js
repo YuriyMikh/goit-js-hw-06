@@ -8,6 +8,7 @@ buttonDestoyRef.addEventListener("click", destroyBoxes);
 
 function createBoxes(amount) {
   amount = inputRef.value;
+  console.log(amount);
   if (inputRef === "") return;
   else {
     const divElement = document.createElement("div");
@@ -20,8 +21,9 @@ function createBoxes(amount) {
   // divBoxesRef.insertAdjacentHTML("afterbegin", divElement);
 }
 
-function destroyBoxes() {
+function destroyBoxes(event) {
   divBoxesRef.innerHTML = "";
+  inputRef.currentTarget.reset();
 }
 
 function getRandomHexColor() {
