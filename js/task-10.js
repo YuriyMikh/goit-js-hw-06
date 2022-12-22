@@ -8,16 +8,16 @@ buttonDestoyRef.addEventListener("click", destroyBoxes);
 
 function createBoxes(amount) {
   amount = inputRef.value;
+  if (inputRef === "") return;
+  else {
+    const divElement = document.createElement("div");
+    divElement.style.backgroundColor = getRandomHexColor();
+    divElement.style.height = "30px";
+    divElement.style.width = "30px";
+    divBoxesRef.append(divElement);
+  }
 
-  const divElement = document.createElement("div");
-  divElement.style.backgroundColor = getRandomHexColor();
-  divElement.classList.add('#boxes');
-  // divElement.textContent = 'TESTTT!!!'
-  divBoxesRef.append(divElement);
-
-  // const string = "<div>TESTTTTTT</div";
-
-  // divBoxesRef.insertAdjacentHTML("afterbegin", string);
+  // divBoxesRef.insertAdjacentHTML("afterbegin", divElement);
 }
 
 function destroyBoxes() {
