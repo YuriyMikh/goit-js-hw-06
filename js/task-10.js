@@ -15,9 +15,9 @@ function createBoxes(amount) {
   divElement.style.backgroundColor = getRandomHexColor();
   divElement.style.height = "30px";
   divElement.style.width = "30px";
-  // divBoxesRef.append(divElement);
+  divBoxesRef.append(divElement);
 
-  divBoxesRef.insertAdjacentHTML("afterbegin", '<div>TEST!!!</div>');
+  // divBoxesRef.insertAdjacentHTML("afterbegin", '<div>TEST!!!</div>');
 }
 
 function destroyBoxes(event) {
