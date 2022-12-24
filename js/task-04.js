@@ -1,4 +1,4 @@
-//ссылки на элементы DOM с которыми бужем работать
+//ссылки на элементы DOM с которыми будем работать
 const decrementButtonRef = document.querySelector('[data-action="decrement"]');
 const incrementButtonRef = document.querySelector('[data-action="increment"]');
 const resultRef = document.querySelector("#value");
