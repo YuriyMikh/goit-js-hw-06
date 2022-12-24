@@ -5,9 +5,9 @@ const ingredients = [
   "Tomatos",
   "Herbs",
   "Condiments",
-];
+  ];
 
-const listElements = document.querySelector("#ingredients");
+const listElementsRef = document.querySelector("#ingredients");
 
 const addIngredients = ingredients.map((ingredient) => {
   const newElement = document.createElement("li");
@@ -17,11 +17,10 @@ const addIngredients = ingredients.map((ingredient) => {
   return newElement;
 });
 
-listElements.append(...addIngredients);
+listElementsRef.append(...addIngredients);
 
 //----------------
 //решение через функцию
-// const listElements = document.querySelector("#ingredients");
 
 // const addIngredients = array => {
 //   return array.map(ingredient => {
@@ -35,7 +34,7 @@ listElements.append(...addIngredients);
 
 // const functionСall = addIngredients(ingredients); //вызов функции
 
-// listElements.append(...functionСall);
+// listElementsRef.append(...functionСall);
 
 
 
