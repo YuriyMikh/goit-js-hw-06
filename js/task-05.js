@@ -1,13 +1,13 @@
-const inputEl = document.querySelector("#name-input");
-const outputEl = document.querySelector("#name-output");
+const inputRef = document.querySelector("#name-input");
+const outputRef = document.querySelector("#name-output");
 
-inputEl.addEventListener("input", onInputText);
+inputRef.addEventListener("input", onInputText);
 
 function onInputText(event) {
-  outputEl.textContent = event.currentTarget.value;
+  outputRef.textContent = event.currentTarget.value;
   if (event.currentTarget.value === "") {
-    outputEl.textContent = "Anonymous";
-    //outputEl.textContent = outputEl.textContent;
-    //вариант не со строкой "Anonymous", а стем что изначально было в outputEl.textContent
+    outputRef.textContent = "Anonymous";
+    //outputRef.textContent = outputRef.textContent;
+    //вариант не со строкой "Anonymous", а стем что изначально было в outputRef.textContent
   }
 }
