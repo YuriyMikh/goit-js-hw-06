@@ -8,6 +8,6 @@ function onInputText(event) {
   if (event.currentTarget.value === "") {
     outputRef.textContent = "Anonymous";
     //outputRef.textContent = outputRef.textContent;
-    //вариант не со строкой "Anonymous", а стем что изначально было в outputRef.textContent
+    //вариант не со строкой "Anonymous", а с тем что изначально было в outputRef.textContent
   }
 }
